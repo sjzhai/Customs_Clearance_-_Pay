@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+
+    <display-name>web</display-name>
+
+    <welcome-file-list>
+
+        <welcome-file>indexPay.html</welcome-file>
+
+        <welcome-file>index.htm</welcome-file>
+
+        <welcome-file>index.jsp</welcome-file>
+
+        <welcome-file>default.html</welcome-file>
+
+        <welcome-file>default.htm</welcome-file>
+
+        <welcome-file>default.jsp</welcome-file>
+
+    </welcome-file-list>
+    <servlet>
+        <!-- 声明Servlet对象 -->
+        <servlet-name>MyServlet</servlet-name>
+        <!-- 上面一句指定Servlet对象的名称 -->
+        <servlet-class>AlipayTradePay</servlet-class>
+        <!-- 上面一句指定Servlet对象的完整位置，包含包名和类名 -->
+    </servlet>
+    <servlet-mapping>
+        <!-- 映射Servlet -->
+        <servlet-name>MyServlet</servlet-name>
+        <!--<servlet-name>与上面<Servlet>标签的<servlet-name>元素相对应，不可以随便起名  -->
+        <url-pattern>/MyServlet</url-pattern>
+        <!-- 上面一句话用于映射访问URL -->
+    </servlet-mapping>
+    <!--<context-param>-->
+        <!--<param-name>web1</param-name>-->
+        <!--<param-value>hello</param-value>-->
+    <!--</context-param>-->
+
+</web-app>
