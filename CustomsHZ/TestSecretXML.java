@@ -13,10 +13,10 @@ import java.util.Base64;
 public class TestSecretXML {
     private static String AES_SECRETE_KEY = "AESAESAES==";
     // 商户私钥
-    public static String APP_PRIVATE_KEY = "JvVMFwWOYNeD3G2byW7Yj794AOfg0JTa2MNN3+UtXwHr/m4DelG+gO99Mo8cHtC5Mqa73bQGruDd6HBwBuv/u2bSCl/ZBqJ9Vbfo0vWlSa0CrqzzehcEO8/gw1VeBkcftLLC7vevx3aYfSR2b4o9Hyo0ZrkmdxozYmPXjIRweemIEYKG8a49DrB4o4D/CsQllJTJ/PhY70LLk7A7wKlIrcO3GMozvBylaYIHTdKyEl84Cn3aFc1VzaPX+aSZbq1d4gCmMXwo0QJRaYQ/VzUZVpn12x8NK/qrxNHQXRQCHqhClpKC6gA3sLLAgMBAAECggEAAJhZZOmjCnAuQPxJa2U4RBtWBr45udXleVQwiBWZidwOTKU0CilIWsglnBzxOArdOJlRp7AxsqNXRUYjFSVe0QeHykFF/6enWpDQ/eGxjMgG4SnttqA4HSd2sVQXXxzWWk6YsZKby+Xkt6CxeYLGZodGj2buzpeyhiY2pa5BB9i7p1CppNdQzsky/U/9yijHxev5YnzAJt4dMys5c++Srd9MqBxo6YUkXlYjn8uAx+B33frN2ZOra8kCnPLkc7PNsBL5DZwWGvdqME7oExV5/GDCk59sobQoObmYazyW6PYDtXUFgZZRh+ZN91gTgPAVSlPhYu4KVXud/PdMytdUkQKBgQC8HIVyww2meo3CSZrjiigHjxC7OcTncBPDBudS3etWqfZVsAXSw/Ltigfr5eR6y431iS3v4UsoKkyLFEg+Jq2rjAXYI4jGFGHrixEohXWIEEhsHlZcH+n8PTbMAMUCOd8uwvmF3KItkaAK/JtnboZI5MaSll1ESF1pUj+eKSBF0wKBgQCwVnE/EAknvf5L1owRZ/FCd5ZYrwyd4MXc7LsnLKkcsrtKsJwsIhEz5nX3B0u9P2oiZ6lnfajIVwMsUHtMlNTviElxXmluGc4PB+aXTnTCLoKuAheod/cRZkd9Dnqfv04VGKm31QqEQKspqhZvmJPCYXv5s1owzGKMHPlSA92cKQKBgQCNa4vQCWAbxosIg7mUUuthM2dKulWUASh6OJh0Li6dSs3NAbZ/C514g4sNCBpLTvj8nRMSAng0TAibjrX5M67hBzXllmFfOTeck0JlCmCf2E36KpyWSc/pOEQX/oQd9lAZoa9hucubIp4FZH+YtPjzmDrJPY4EpbrEUXdOenCuzQKBgGlE8Y5IMG79SVZU2oF5n9miMqr2tX16tiRRXtjgHIT5Xj4UeOcP310wc7PpMxnjRaUMZWFW7u/KoiZOVY0+PHBS2CVJy37jANSQTuR8/c7+nRzsOttj4qcMfBj4D9RWDHMjqg4IrKKPSJ8y3vn4CB2+vJgwreL74Mjscxq3HBEhAoGBAJk9ZdhPnpqx7SJp0hj0PrkQGZPiziJKRGz3G+TP8gymK/ehwSVThhzL0ugHpBGcyr4sGWA0KR+dD4RpSpHI757V4R36C8Sn0jYcWnZVX99PCpAEWCkGaEIBZsLNeMlX6wIk+FPeOF5pXGHmyoMu2rUNWSh1EFVHE6RvcMFqu1g3";
+    public static String APP_PRIVATE_KEY = "";
     // 商户公钥
-    public static String APP_PUBLIC_KEY = "ib1TBcFjmDXg9xtm8lu2I+/eADn4NCU2tjDTd/lLV8B6/5uA3pRvoDvfTKPHB7QuTKmu920Bq7g3ehwcAbr/7tm0gpf2QaifVW36NL1pUmtAq6s83oXBDvP4MNVXgZHH7Sywu73r8d2mH0kdm+KPR8qNGa5JncaM2Jj14yEcHnpiBGChvGuPQ6weKOA/wrEJZSUyfz4WO9Cy5OwO8CpSK3DtxjKM7wcpWmCB03SshJfOAp92hXNVc2j1/mkmW6tXeIApjF8KNECUWmEP1c1GVaZ9dsfDSv6q8TR0F0UAh6oQpaSguoAN7CywIDAQAB";
-
+    public static String APP_PUBLIC_KEY = "";
+        
     public static String formatXML(String xmlStr) throws DocumentException, IOException {
         Document document = DocumentHelper.parseText(xmlStr);
 
@@ -143,10 +143,6 @@ public class TestSecretXML {
 //        String encoded2 = Base64.getEncoder().encodeToString(privateKey);
 //        System.out.println("public " + encoded);
 //        System.out.println("private " + encoded2);
-//        public MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIIwKI72JtB7F6y6DKJBOGtlEOZY9ToIH7w0fCir7SiRQ+04HMwWU7XRibm4LbW8cjxE6/xyW2Y2s4oO8DgkMDkCAwEAAQ==
-//        public MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAI+wbICF+ctemYTLTBQtj7co2uKzRidCxG5KHQW1m+TQLRzL/K6ntYO9efvWh9VFNXIW4tFNo1stDOzlhTx2He8CAwEAAQ==
-
-//        private MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAgjAojvYm0HsXrLoMokE4a2UQ5lj1OggfvDR8KKvtKJFD7TgczBZTtdGJubgttbxyPETr/HJbZjazig7wOCQwOQIDAQABAkBl3/GdDZoKAojgLSa9wXO49nlnB62+H6VVzWxrFz6aQxNZj/3leraBo5Wg/x8H/mW+6iu+C/yXrjKUNzUjouYRAiEAyZIFyeUiW6hxR2tLCzth9c/dlzvKs0XZ85GqqIHvyMcCIQClV6+FaXSypPT1bfiGnjo68b7LVkA2mCbd8vOjXf0+/wIgVzIBqwqhyECfcCOrvNodUDZxRwCoeNCYrdKvnmFHFvUCIQCEkp5F1pyfcOyIrbiMF+qQwK0+1NV/8NeZNuhroT0heQIgWwrqm2uYeHHhRGrZOCIMe7Zqt5+MWLl7hrNMf3tGA5k=
 
         //解密和验签
 
