@@ -123,7 +123,7 @@ public class CustomsHzTest {
     }
 
     public static String decodeXml(String content) throws Exception {
-        String AES_KEY = "w3nT4Me4U71Cj1bHhM0mMA==";
+        String AES_KEY = "";
         byte[] input_content = Base64.decodeBase64(content.getBytes("utf-8"));
         byte[] aes_key = Base64.decodeBase64(AES_KEY.getBytes("utf-8"));
         String original_content =new String(AESUtil.decrypt(input_content, aes_key),"utf-8");
