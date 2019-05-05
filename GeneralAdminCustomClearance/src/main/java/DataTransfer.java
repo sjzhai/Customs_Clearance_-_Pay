@@ -267,9 +267,9 @@ public class DataTransfer {
         String test = "<CEB312Message xmlns=\"http://www.chinaport.gov.cn/ceb\" guid=\"4CDE1CFD-EDED-46B1-946C-B8022E42FC94\" version=\"1.0\">\n" +
                 "    <OrderReturn>\n" +
                 "        <guid>4CDE1CFD-EDED-46B1-946C-B8022E42FC94</guid>\n" +
-                "        <ebpCode>1105910159</ebpCode>\n" +
-                "        <ebcCode>1105910159</ebcCode>\n" +
-                "        <orderNo>order20160321116420545</orderNo>\n" +
+                "        <ebpCode></ebpCode>\n" +
+                "        <ebcCode></ebcCode>\n" +
+                "        <orderNo></orderNo>\n" +
                 "        <returnStatus>2</returnStatus>\n" +
                 "        <returnTime>20160428182238000</returnTime>\n" +
                 "        <returnInfo>新增申报成功[4CDE1CFD-EDED-46B1-946C-B8022E42FC94]</returnInfo>\n" +
